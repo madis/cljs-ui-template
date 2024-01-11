@@ -1,0 +1,9 @@
+{:deps {:aliases [:cljs]}
+ :dev-http {4200 ["public" "node_modules/bulma"]}
+ :nrepl {:port 42690}
+ :builds
+ {:app {:target :browser
+        :output-dir "public/assets/app/js"
+        :asset-path "/assets/app/js"
+        :modules {:main {:entries [is.mad.browser-app.core]
+                         :init-fn is.mad.browser-app.core/main}}}}}

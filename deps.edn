@@ -1,0 +1,7 @@
+{:paths ["src" "config"]
+ :deps
+ {re-frame/re-frame {:mvn/version "1.4.0"}
+  metosin/reitit {:mvn/version "0.7.0-alpha7"}}
+ :aliases
+ {:cljs
+  {:extra-deps {thheller/shadow-cljs {:mvn/version "2.26.2"}}}}}
